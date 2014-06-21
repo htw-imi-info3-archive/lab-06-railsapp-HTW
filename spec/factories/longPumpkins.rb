@@ -11,3 +11,4 @@ FactoryGirl.define do
     size  's'
     price '3'
   end
+ end
