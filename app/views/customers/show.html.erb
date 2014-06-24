@@ -9,6 +9,18 @@
   <strong>Discount:</strong>
   <%= @customer.discount %>
 </p>
+
+<p>
+  <strong>all orders:</strong><br />
+  <br />
+  <%
+	@order.each do |order|
+		%>placed on: <%=order.placed_on %> | status: <%= order.status %><br /><% 
+	end
+  
+  %>
+</p>
+
 <%= link_to 'New Order', new_order_path(customer: @customer) %>
 
 <%= link_to 'Edit', edit_customer_path(@customer) %> |
