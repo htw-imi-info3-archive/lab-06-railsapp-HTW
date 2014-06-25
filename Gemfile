@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'tzinfo-data', platforms: [:x64_mingw,:mingw, :mswin]
+#https://github.com/tzinfo/tzinfo-data/issues/4
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
