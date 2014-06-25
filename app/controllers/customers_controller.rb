@@ -10,6 +10,8 @@ class CustomersController < ApplicationController
   # GET /customers/1
   # GET /customers/1.json
   def show
+	#@orders = Order.find(:conditions => "belongs_to = #{@customer.id}")
+	@order = Order.where(:customer_id => @customer.id)
   end
 
   # GET /customers/new
