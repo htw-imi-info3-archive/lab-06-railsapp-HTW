@@ -1,10 +1,8 @@
 require 'rails_helper'
 
-describe "customer page", :type => :feature do
-  before :each do
-    @customer = create(:customer)
-  end
-  it "shows all pumpkins" do
+describe "one customer page", :type => :feature do
+
+  it "table is there" do
     visit "/customers/#{@customer.id}"
     expect(page).to have_content 'Placed on'
     expect(page).to have_content 'Status'
