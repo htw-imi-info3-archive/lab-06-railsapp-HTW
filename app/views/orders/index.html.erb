@@ -14,11 +14,6 @@
     <% @orders.each do |order| %>
       <tr>
         <td><%= order.customer_id%></td>
-        <td>
-          <% if(order.customer_id != nil) %>
-          <%= order.customer.name %>
-          <% end %>
-        </td>
         <td><%= order.placed_on %></td>
         <td><%= order.status %></td>
         <td><%= link_to 'Show', order %></td>
