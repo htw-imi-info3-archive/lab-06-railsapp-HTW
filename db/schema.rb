@@ -27,6 +27,8 @@ ActiveRecord::Schema.define(version: 20150122232433) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "pumpkin_name"
+    t.integer  "pumpkin_id"
+    t.decimal  "pumpkin_price"
   end
 
   create_table "pumpkins", force: true do |t|
