@@ -9,6 +9,26 @@
   <strong>Discount:</strong>
   <%= @customer.discount %>
 </p>
+
+<p>
+	<strong>Orders:</strong>
+</p>
+<ul>
+	<%
+		total = 0
+		orders = @customer.orders
+		orders.each do |order|
+		if !order.price.nil?
+			total = total + order.price
+		end
+	%>
+	<li>Order ID <%= order.id %></li>
+	<%
+		end
+	%>
+	<li>Total Price: <%= total %></li>
+</ul>
+
 <%= link_to 'New Order', new_order_path(customer: @customer) %>
 
 <%= link_to 'Edit', edit_customer_path(@customer) %> |
