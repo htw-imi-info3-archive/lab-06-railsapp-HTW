@@ -4,8 +4,7 @@ class CreateOrders < ActiveRecord::Migration
       t.integer :customer_id
       t.date :placed_on
       t.string :status
-	  t.decimal :price
-	
+
       t.timestamps
     end
   end

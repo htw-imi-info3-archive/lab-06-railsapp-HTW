@@ -5,12 +5,6 @@
   <%= @customer.name %>
 </p>
 
-<% @customer.orders.each do |myorder| %>
-<p>
-<%= 'Order: ' %><%= link_to myorder.status, order_path(myorder) %>
-</p>
-<% end %>
-
 <p>
   <strong>Discount:</strong>
   <%= @customer.discount %>
