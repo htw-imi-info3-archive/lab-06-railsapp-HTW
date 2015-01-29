@@ -15,5 +15,10 @@
   <%= @order.status %>
 </p>
 
+<p>
+  <strong>Price:</strong>
+  <%= @order.price %>
+</p>
+
 <%= link_to 'Edit', edit_order_path(@order) %> |
 <%= link_to 'Back', orders_path %>
