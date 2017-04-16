@@ -1,8 +1,15 @@
+<h1>Show order</h1>
+
 <p id="notice"><%= notice %></p>
 
 <p>
   <strong>Customer:</strong>
-  <%= @order.customer_id %>
+  <%= @order.customer.name %>
+</p>
+
+<p>
+  <strong>Pumpkin name:</strong>
+  <%= @order.pumpkin_id %>
 </p>
 
 <p>
