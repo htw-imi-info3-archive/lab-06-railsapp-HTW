@@ -13,4 +13,9 @@ describe "the pumpkin overview", :type => :feature do
     expect(page).to have_content 'Hokkaido'
     expect(page).to have_content 'Butternut'
   end
+
+  it "shows all orders" do
+    visit '/orders'
+    expect(page).to have_content Customer.name
+  end
 end
