@@ -3,7 +3,7 @@ require 'rails_helper'
 describe "the pumpkin overview", :type => :feature do
   before :each do
     create(:pumpkin)
-    create('hokkaido')
+    create(:hokkaido)
   end
 
   it "shows all pumpkins" do
